@@ -4,7 +4,7 @@ const searchItem = document.querySelector(".search-box input");
 const info = document.querySelector(".weather-info");
 const missing = document.querySelector(".missing");
 const tempNumber = document.querySelector("#temp-number");
-const weatherImg = document.querySelector('#weather-img');
+const weatherImg = document.querySelector("#weather-img");
 
 async function findTemp() {
   container.style.height = "60px";
@@ -39,8 +39,8 @@ async function findTemp() {
 }
 
 search.addEventListener("click", findTemp);
-searchItem.addEventListener("keypress", function(event){
-    if(event.key === 'Enter'){
-        findTemp();
-    }
+searchItem.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    findTemp();
+  }
 });
