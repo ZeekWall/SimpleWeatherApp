@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/c0296b538a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <i class="fa-solid fa-map-pin"></i>
+        <input type="text" placeholder="Enter City" />
+        <button type="submit">Go</button>
+      </div>
+      <div class="missing" hidden>
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/021/620/238/original/magnifying-glass-cartoon-icon-illustration-flat-illustration-of-cute-magnifying-glass-cartoon-style-icon-free-vector.jpg"
+          alt=""
+        />
+        <p>No city found!</p>
+      </div>
+      <div class="weather-info" hidden>
+        <div class="temp">
+          <i class="fa-solid fa-temperature-half"></i>
+          <h3 id="temp">Temperature</h3>
+        </div>
+      </div>
+      <div class="number">
+        <h2 id="temp-number">Test</h2>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
