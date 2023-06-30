@@ -102,8 +102,3 @@ body {
 .number #temp-number {
     font-size: 70px;
 }
-
-#weather-img {
-    width: 50px;
-    height: auto;
-}
