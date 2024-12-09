@@ -5,6 +5,7 @@ const info = document.querySelector(".weather-info");
 const missing = document.querySelector(".missing");
 const tempNumber = document.querySelector("#temp-number");
 const weatherImg = document.querySelector("#weather-img");
+const feelsLikeNumber = document.querySelector("#feelsLikeNumber")
 
 async function findTemp() {
   container.style.height = "60px";
@@ -23,11 +24,14 @@ async function findTemp() {
     console.log(result);
 
     if (response.ok) {
+      searchItem.value = `${result["location"]["name"]}, ${result["location"]["region"]}`;
       missing.style.display = "none";
       info.style.display = "flex";
       tempNumber.style.display = "flex";
-      container.style.height = "250px";
+      container.style.height = "18rem";
       tempNumber.innerHTML = `${result["current"]["temp_f"]}°F`;
+      feelsLikeNumber.innerHTML = `${result["current"]["feelslike_f"]}°F`;
+
     } else {
       info.style.display = "none";
       tempNumber.style.display = "none";

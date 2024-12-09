@@ -54,6 +54,7 @@ body {
 
 .search-box i {
   padding: 7px;
+  padding-right: 5%;
 }
 
 .search-box input {
@@ -78,24 +79,31 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 15px;
+  padding-top: 15px;
 }
 
 .weather-info .temp {
   display: flex;
 }
 
+.weather-info .feelsLike {
+  display: flex;
+}
+
 .weather-info i {
-  padding: 4px;
+  padding:4px;
 }
 
 .number {
   display: flex;
-  height: 50%;
   justify-content: center;
   align-items: center;
 }
 
 .number #temp-number {
+  font-size: 70px;
+}
+
+.number #feelsLikeNumber {
   font-size: 70px;
 }
